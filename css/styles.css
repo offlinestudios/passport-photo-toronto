@@ -59,6 +59,8 @@ header {
 .logo img {
   height: 50px;
   margin-right: 20px; /* Increased spacing between logo and text */
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -117,7 +119,7 @@ nav ul li a:hover {
 
 .cta-button {
   display: inline-block;
-  background-color: var(--accent-color); /* Changed from secondary-color (red) to accent-color (gold) */
+  background-color: var(--gold-color); /* Changed to gold-color for consistency */
   color: var(--dark-text); /* Changed to dark text for better contrast on gold */
   padding: 12px 30px;
   border-radius: var(--border-radius);
@@ -133,12 +135,12 @@ nav ul li a:hover {
 
 /* Services Section */
 .services {
-  padding: 100px 0; /* Increased padding for better spacing */
+  padding: 80px 0; /* Consistent padding */
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 60px; /* Increased margin for better spacing */
+  margin-bottom: 50px; /* Consistent margin */
 }
 
 .section-title h2 {
@@ -176,8 +178,9 @@ nav ul li a:hover {
 
 .service-card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
+  object-position: center;
 }
 
 .service-content {
@@ -195,7 +198,7 @@ nav ul li a:hover {
 }
 
 .service-link {
-  color: var(--accent-color); /* Changed from secondary-color (red) to accent-color (gold) */
+  color: var(--gold-color); /* Changed from accent-color to gold-color for consistency */
   text-decoration: none;
   font-weight: 600;
   display: inline-flex;
@@ -213,15 +216,15 @@ nav ul li a:hover {
 
 /* About Section */
 .about {
-  padding: 100px 0; /* Increased padding for better spacing */
+  padding: 80px 0; /* Consistent padding */
   background-color: var(--light-bg);
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  gap: 60px; /* Increased gap for better spacing */
-  padding: 0 20px; /* Added horizontal padding */
+  gap: 50px; /* Consistent gap */
+  padding: 0 20px; /* Consistent padding */
 }
 
 .about-image {
@@ -429,7 +432,7 @@ footer {
 .service-detail-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 40px;
+  gap: 30px;
 }
 
 .service-main-content {
@@ -446,6 +449,13 @@ footer {
 
 .service-main-content p {
   margin-bottom: 20px;
+}
+
+.service-main-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: var(--border-radius);
 }
 
 .service-main-content ul {
